@@ -1,4 +1,4 @@
-# Mondrian
+# Mondrian Copies
 
 ##### _Copies of Mondrian paintings using CSS Grid_
 
