@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  margin-bottom: 4.0rem;
+  margin-bottom: 3.5rem;
 }
 
 header h1 {
@@ -26,24 +26,26 @@ header h3 {
 }
 
 main {
-  width: 100rem;
+  width: 90rem;
   min-height: 100vh;
-  padding: 0 2.0rem;
-  border: 1px dotted #f00;
+  padding: 0;
   margin: 0 auto;
   font-size: 1.6rem;
 }
 
 section {
-  border: 1px dotted #f80;
-  margin: 1.6rem auto;
+  margin: 6rem auto 10rem auto;
   text-align: center;
-  /*
   display: grid;
-  grid-template-columns: auto auto; */
+  grid-template-columns: auto auto;
+  grid-column-gap: 6rem;
+  justify-content: center;
 }
 
 section h2 {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  margin-bottom: 2rem;
   font-size: 1.8rem;
   font-style: italic;
   font-weight: 400;
@@ -54,20 +56,6 @@ section h4 {
   margin-bottom: 1.0rem;
   color: #282828;
 }
-
-/* .original, .copy {
-  float: left;
-} */
-
-/*
-.original {
-  margin: 1.5rem;
-}
-
-.canvas {
-  margin: 1.5rem;
-}
-*/
 
 .painting {
   display: grid;
@@ -122,4 +110,44 @@ section h4 {
 
 #picture0 .yellow {
   background-color: #dcd044;
+}
+
+#picture1 .original {
+  width: 25rem;
+}
+
+#picture1 .canvas {
+  width: 50rem;
+  height: 60rem;
+}
+
+#picture1 .painting {
+  grid-template-columns: auto 17.5rem;
+  grid-template-rows: 30% 15rem auto 0;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2.4rem;
+}
+
+#picture1 #white1 {
+  grid-row: 2 / 4;
+}
+
+#picture1 #white2 {
+  grid-row: 3 / 5;
+}
+
+#picture1 .black {
+  background-color: #000000;
+}
+
+#picture1 .white {
+  background-color: #e0dcd2;
+}
+
+#picture1 .red {
+  background-color: #f40700;
+}
+
+#picture1 .blue {
+  background-color: #003c98;
 }
